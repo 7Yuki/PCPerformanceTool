@@ -12,6 +12,11 @@ public class CommandBuilder {
         return this;
     }
 
+    public CommandBuilder customString(String customValue) {
+        commands.add(customValue);
+        return this;
+    }
+
     public CommandBuilder addPrefix(String prefix) {
         commands.add(prefix);
         return this;
@@ -39,13 +44,13 @@ public class CommandBuilder {
     }
 
     public CommandBuilder netshInterface() {
-        commands.add("interface");
+        commands.add(" interface");
 
         return this;
     }
 
     public CommandBuilder deleteValue() {
-        commands.add("/deletevalue");
+        commands.add(" /deletevalue");
         return this;
     }
 
