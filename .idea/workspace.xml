@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="144e3f61-258d-4400-ae0a-04bbe6b769d2" name="Changes" comment="Edited method names to comply with Java naming conventions, added a dedicated string for spaces if needed for clarity and ease of use of building commands via the builder">
+    <list default="true" id="144e3f61-258d-4400-ae0a-04bbe6b769d2" name="Changes" comment="Added custom string method to allow certain commands that dont have many repeating values to be created without creating additional unnecessary methods">
+      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/NetAdapterCommandBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/util/CommandBuilderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/CommandBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/CommandBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/CommandBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/CMDCommandBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667667376001</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added custom string method to allow certain commands that dont have many repeating values to be created without creating additional unnecessary methods">
+      <created>1667667673620</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667667673620</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,6 +110,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added CommandBuilder.java to make building commands easier" />
     <MESSAGE value="Edited method names to comply with Java naming conventions, added a dedicated string for spaces if needed for clarity and ease of use of building commands via the builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited method names to comply with Java naming conventions, added a dedicated string for spaces if needed for clarity and ease of use of building commands via the builder" />
+    <MESSAGE value="Added custom string method to allow certain commands that dont have many repeating values to be created without creating additional unnecessary methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added custom string method to allow certain commands that dont have many repeating values to be created without creating additional unnecessary methods" />
   </component>
 </project>
