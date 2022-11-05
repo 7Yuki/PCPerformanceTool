@@ -5,9 +5,10 @@ import java.util.List;
 
 public class CommandBuilder {
     private final List<String> commands = new ArrayList<>();
+    private final String spaceString = " ";
 
-    public CommandBuilder BcdeditSet() {
-        commands.add("/set");
+    public CommandBuilder bcdeditSet() {
+        commands.add(spaceString + "/set");
         return this;
     }
 
@@ -16,55 +17,55 @@ public class CommandBuilder {
         return this;
     }
 
-    public CommandBuilder intIP() {
-        commands.add("int ip");
+    public CommandBuilder intIp() {
+        commands.add(spaceString + "int ip");
         return this;
     }
 
-    public CommandBuilder IntTCP()
+    public CommandBuilder intTcp()
     {
         commands.add("int tcp ");
         return this;
     }
 
-    public CommandBuilder NetshSet() {
-        commands.add("set ");
+    public CommandBuilder netShSet() {
+        commands.add(spaceString + "set");
         return this;
     }
 
-    public CommandBuilder Global() {
-        commands.add("global ");
+    public CommandBuilder global() {
+        commands.add(spaceString + "global");
         return this;
     }
 
-    public CommandBuilder Interface() {
+    public CommandBuilder netshInterface() {
         commands.add("interface");
 
         return this;
     }
 
-    public CommandBuilder DeleteValue() {
+    public CommandBuilder deleteValue() {
         commands.add("/deletevalue");
         return this;
     }
 
-    public CommandBuilder Value(String value) {
-        commands.add(value);
+    public CommandBuilder value(String value) {
+        commands.add(spaceString + value);
         return this;
     }
 
-    public CommandBuilder ValueSetting(String setting) {
+    public CommandBuilder valueSetting(String setting) {
         commands.add(setting);
         return this;
     }
 
-    public String CompleteCommand() {
-        String str = "";
+    public String completeCommand() {
+        StringBuilder str = new StringBuilder();
 
         for (int i = 0; i < (long) commands.size(); i++)
         {
-            str += commands.get(i);
+            str.append(commands.get(i));
         }
-        return str;
+        return str.toString();
     }
 }
