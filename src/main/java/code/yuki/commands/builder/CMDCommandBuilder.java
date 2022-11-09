@@ -64,6 +64,10 @@ public class CMDCommandBuilder extends CommandBuilderUtil {
         commandParts.add(setting);
         return this;
     }
+    public CMDCommandBuilder disableWindowsSearchTelemetry() {
+        commandParts.add("advfirewall firewall add rule name=\"SearchUI Telemetry\" dir=out action=block program=\"%SystemRoot%\\SystemApps\\Microsoft.Windows.Cortana_cw5n1h2txyewy\\SearchUI.exe\"");
+        return this;
+    }
 
 
 }
