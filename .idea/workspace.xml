@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="144e3f61-258d-4400-ae0a-04bbe6b769d2" name="Changes" comment="Added custom string method to allow certain commands that dont have many repeating values to be created without creating additional unnecessary methods">
-      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/NetAdapterCommandBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/util/CommandBuilderUtil.java" afterDir="false" />
+    <list default="true" id="144e3f61-258d-4400-ae0a-04bbe6b769d2" name="Changes" comment="Removed redundant variables, added a parent class due to the removal of a redundant/repeated method/variables across the command builders.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/RegistryCommandBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/CommandBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/CMDCommandBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/CMDCommandBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/CMDCommandBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +92,42 @@
       <option name="project" value="LOCAL" />
       <updated>1667667673620</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial Commit">
+      <created>1667669722927</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667669722927</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Initial Commit">
+      <created>1667669747425</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667669747425</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Initial Commit">
+      <created>1667669750754</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667669750754</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Initial Commit">
+      <created>1667669764812</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667669764812</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Removed redundant variables, added a parent class due to the removal of a redundant/repeated method/variables across the command builders.">
+      <created>1667669856190</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667669856190</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +145,8 @@
     <MESSAGE value="Added CommandBuilder.java to make building commands easier" />
     <MESSAGE value="Edited method names to comply with Java naming conventions, added a dedicated string for spaces if needed for clarity and ease of use of building commands via the builder" />
     <MESSAGE value="Added custom string method to allow certain commands that dont have many repeating values to be created without creating additional unnecessary methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added custom string method to allow certain commands that dont have many repeating values to be created without creating additional unnecessary methods" />
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Removed redundant variables, added a parent class due to the removal of a redundant/repeated method/variables across the command builders." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed redundant variables, added a parent class due to the removal of a redundant/repeated method/variables across the command builders." />
   </component>
 </project>
