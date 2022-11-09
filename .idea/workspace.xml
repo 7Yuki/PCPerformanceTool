@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="144e3f61-258d-4400-ae0a-04bbe6b769d2" name="Changes" comment="Removed redundant variables, added a parent class due to the removal of a redundant/repeated method/variables across the command builders.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/RegistryCommandBuilder.java" afterDir="false" />
+    <list default="true" id="144e3f61-258d-4400-ae0a-04bbe6b769d2" name="Changes" comment="Initial Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/CMDCommandBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/commands/builder/CMDCommandBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +124,35 @@
       <option name="project" value="LOCAL" />
       <updated>1667669856190</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Initial Commit">
+      <created>1668011663372</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668011663372</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Initial Commit">
+      <created>1668011673162</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668011673162</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added method for disabling windows search telemetry">
+      <created>1668011711872</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668011711872</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Initial Commit">
+      <created>1668011719050</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668011719050</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,8 +170,9 @@
     <MESSAGE value="Added CommandBuilder.java to make building commands easier" />
     <MESSAGE value="Edited method names to comply with Java naming conventions, added a dedicated string for spaces if needed for clarity and ease of use of building commands via the builder" />
     <MESSAGE value="Added custom string method to allow certain commands that dont have many repeating values to be created without creating additional unnecessary methods" />
-    <MESSAGE value="Initial Commit" />
     <MESSAGE value="Removed redundant variables, added a parent class due to the removal of a redundant/repeated method/variables across the command builders." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed redundant variables, added a parent class due to the removal of a redundant/repeated method/variables across the command builders." />
+    <MESSAGE value="Added method for disabling windows search telemetry" />
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
 </project>
