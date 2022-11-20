@@ -65,64 +65,57 @@ public class ValorantSettings {
         String s;
         while (scanner.hasNext()) {
             s = scanner.nextLine().toLowerCase();
+            if (!s.contains("=")) continue;
+            String[] arr = s.split("=");
             if (s.contains("shadingquality")) {
-                String[] arr = s.split("=");
                 System.out.println("Shading Quality raw output: " + s);
                 System.out.println("Split output: " + arr[0] + " and " + arr[1]);
                 shadingQuality = Integer.parseInt(arr[1]);
                 System.out.println("Shading Quality refined output: " + shadingQuality);
             }
             if (s.contains("foliagequality")) {
-                String[] arr = s.split("=");
                 System.out.println("Foliage Quality raw output: " + s);
                 System.out.println("Split output: " + arr[0] + " and " + arr[1]);
                 foliageQuality = Integer.parseInt(arr[1]);
                 System.out.println("Foliage Quality refined output: " + foliageQuality);
             }
             if (s.contains("effectsquality")) {
-                String[] arr = s.split("=");
                 System.out.println("Effects Quality raw output: " + s);
                 System.out.println("Split output: " + arr[0] + " and " + arr[1]);
                 effectsQuality = Integer.parseInt(arr[1]);
                 System.out.println("Effects Quality refined output: " + effectsQuality);
             }
             if (s.contains("texturequality")) {
-                String[] arr = s.split("=");
                 System.out.println("Texture Quality raw output: " + s);
                 System.out.println("Split output: " + arr[0] + " and " + arr[1]);
                 textureQuality = Integer.parseInt(arr[1]);
                 System.out.println("Texture Quality refined output: " + textureQuality);
             }
             if (s.contains("postprocessquality")) {
-                String[] arr = s.split("=");
                 System.out.println("Post Process Quality raw output: " + s);
                 System.out.println("Split output: " + arr[0] + " and " + arr[1]);
                 postProcessQuality = Integer.parseInt(arr[1]);
                 System.out.println("Post Process Quality refined output: " + postProcessQuality);
             }
             if (s.contains("shadowquality")) {
-                String[] arr = s.split("=");
                 System.out.println("Post Process Quality raw output: " + s);
                 System.out.println("Split output: " + arr[0] + " and " + arr[1]);
                 shadowQuality = Integer.parseInt(arr[1]);
                 System.out.println("Post Process Quality refined output: " + shadowQuality);
             }
             if (s.contains("antialiasingquality")) {
-                String[] arr = s.split("=");
                 System.out.println("Anti Alias Quality raw output: " + s);
                 System.out.println("Split output: " + arr[0] + " and " + arr[1]);
                 antiAliasingQuality = Integer.parseInt(arr[1]);
                 System.out.println("Anti Alias Quality refined output: " + antiAliasingQuality);
             }
             if (s.contains("viewdistancequality")) {
-                String[] arr = s.split("=");
                 System.out.println("View Distance Quality raw output: " + s);
                 System.out.println("Split output: " + arr[0] + " and " + arr[1]);
                 viewDistanceQuality = Integer.parseInt(arr[1]);
                 System.out.println("View Distance Quality refined output: " + viewDistanceQuality);
             }
             if (s.contains("resolutionquality")) {
-                String[] arr = s.split("=");
                 System.out.println("Resolution Quality raw output: " + s);
                 System.out.println("Split output: " + arr[0] + " and " + arr[1]);
                 resolutionQuality = Double.parseDouble(arr[1]);
