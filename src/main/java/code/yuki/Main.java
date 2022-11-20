@@ -1,6 +1,7 @@
 package code.yuki;
 
 import code.yuki.commands.builder.CMDCommandBuilder;
+import code.yuki.game.ValorantSettings;
 import code.yuki.servicedisabler.ServiceDisabler;
 
 public class Main {
@@ -19,5 +20,10 @@ public class Main {
         ServiceDisabler disabler = new ServiceDisabler();
 
         System.out.println("State of service: " + name + ": " + disabler.stateOfService(name));
+
+        ValorantSettings valSettings = new ValorantSettings();
+        valSettings.readSettings();
+        System.out.println("Last known user directory: " + valSettings.lastKnownUserDirectory);
+        System.out.println("Last known user string: " + valSettings.lastKnownUser);
     }
 }

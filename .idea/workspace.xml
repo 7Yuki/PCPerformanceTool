@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="144e3f61-258d-4400-ae0a-04bbe6b769d2" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/DestinySettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/OverwatchSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/ValorantSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/game/ValorantSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/ValorantSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/gui/GUI.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +46,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "project.propCompiler"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager">
