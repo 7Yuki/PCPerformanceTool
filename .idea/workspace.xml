@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="144e3f61-258d-4400-ae0a-04bbe6b769d2" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/gui/GUI.java" afterDir="false" />
-    </list>
+    <list default="true" id="144e3f61-258d-4400-ae0a-04bbe6b769d2" name="Changes" comment="Removed redundant amount of splitting into splitting only once, also ignored any line that didn't contain an = sign which indicates it wasn't a setting" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -184,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668928693185</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Initial Commit">
+      <created>1668928728787</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1668928728787</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Removed redundant amount of splitting into splitting only once, also ignored any line that didn't contain an = sign which indicates it wasn't a setting">
+      <created>1668929213236</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668929213236</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +217,7 @@
     <MESSAGE value="Removed redundant variables, added a parent class due to the removal of a redundant/repeated method/variables across the command builders." />
     <MESSAGE value="Added method for disabling windows search telemetry" />
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Removed redundant amount of splitting into splitting only once, also ignored any line that didn't contain an = sign which indicates it wasn't a setting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed redundant amount of splitting into splitting only once, also ignored any line that didn't contain an = sign which indicates it wasn't a setting" />
   </component>
 </project>
