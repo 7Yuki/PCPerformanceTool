@@ -22,8 +22,10 @@ public class Main {
         System.out.println("State of service: " + name + ": " + disabler.stateOfService(name));
 
         ValorantSettings valSettings = new ValorantSettings();
-        valSettings.readSettings();
-        System.out.println("Last known user directory: " + valSettings.lastKnownUserDirectory);
-        System.out.println("Last known user string: " + valSettings.lastKnownUser);
+        //valSettings.listGameUserSettingsValues();
+        //System.out.println("Last known user directory: " + valSettings.lastKnownUserDirectory);
+        //System.out.println("Last known user string: " + valSettings.lastKnownUser);
+        valSettings.listRiotUserSettingsValues();
+        valSettings.listGameUserSettingsValues();
     }
 }
