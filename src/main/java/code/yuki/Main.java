@@ -3,7 +3,6 @@ package code.yuki;
 import code.yuki.commands.builder.CMDCommandBuilder;
 import code.yuki.game.ValorantSettings;
 import code.yuki.servicedisabler.ServiceDisabler;
-
 public class Main {
     public static void main(String[] args) throws Exception{
         System.out.println("Hello world!");
@@ -25,7 +24,6 @@ public class Main {
         //valSettings.listGameUserSettingsValues();
         //System.out.println("Last known user directory: " + valSettings.lastKnownUserDirectory);
         //System.out.println("Last known user string: " + valSettings.lastKnownUser);
-        valSettings.listRiotUserSettingsValues();
-        valSettings.listGameUserSettingsValues();
+        valSettings.getLastKnownUserDirectory();
     }
 }
