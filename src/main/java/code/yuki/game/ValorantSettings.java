@@ -1,38 +1,60 @@
 package code.yuki.game;
 
+import lombok.Getter;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FilenameFilter;
 import java.util.Scanner;
 
 public class ValorantSettings {
+
+    @Getter
     private int antiAliasingQuality;
+    @Getter
     private int shadowQuality;
+    @Getter
     private int shadingQuality;
+    @Getter
     private int foliageQuality;
+    @Getter
     private int effectsQuality;
+    @Getter
     private int postProcessQuality;
+    @Getter
     private int viewDistanceQuality;
+    @Getter
     private double resolutionQuality;
+    @Getter
     private int gameSettingTextureQuality;
+    @Getter
     private int materialQuality;
+    @Getter
     private int riotSettingTextureQuality;
+    @Getter
     private int detailQuality;
+    @Getter
     private int uiQuality;
+    @Getter
     private int bloomQuality;
+    @Getter
     private boolean shadowsEnabled;
+    @Getter
     private boolean rawInputEnabled;
+
     private final String lastKnownUser = getLastKnownUser();
     private final String lastKnownUserDirectory = getLastKnownUserDirectory();
 
+
     public ValorantSettings() throws FileNotFoundException {
+        readGameUserSettings();
+        readRiotUserSettings();
     }
 
-    private String getLastKnownUserDirectory() throws FileNotFoundException {
+    public String getLastKnownUserDirectory() {
         File dirPath = new File(System.getProperty("user.home") + "\\AppData\\Local\\VALORANT\\Saved\\Config");
         FilenameFilter filter = (dir, name) -> name.toLowerCase().contains(lastKnownUser);
         String[] dirList = dirPath.list(filter);
-        System.out.println("here: " + dirList);
         if (dirList != null) {
             System.out.println("bruh " + dirList[0]);
 
@@ -100,7 +122,7 @@ public class ValorantSettings {
         String s;
         while (scanner.hasNext()) {
             s = scanner.nextLine().toLowerCase();
-            if (!s.contains("=")) continue;
+            if (!(s.contains("=") && s.contains("quality"))) continue;
             String[] arr = s.split("=");
             if (s.contains("shadingquality")) {
                 shadingQuality = Integer.parseInt(arr[1]);
@@ -133,11 +155,6 @@ public class ValorantSettings {
 
     }
     public void listGameUserSettingsValues() {
-        try {
-            readGameUserSettings();
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
         String riotUserSettingsValues =
                 "\nResolution Quality: " + resolutionQuality +
                 "\nView Distance Quality: " + viewDistanceQuality +
@@ -152,11 +169,6 @@ public class ValorantSettings {
     }
 
     public void listRiotUserSettingsValues() {
-        try {
-            readRiotUserSettings();
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
         String riotUserSettingsValues =
                 "\nMaterial Quality: " + materialQuality +
                 "\nTexture Quality: " + riotSettingTextureQuality +
