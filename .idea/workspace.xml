@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="144e3f61-258d-4400-ae0a-04bbe6b769d2" name="Changes" comment="Added getters via lombok and removed unnecessary try catch statements">
+    <list default="true" id="144e3f61-258d-4400-ae0a-04bbe6b769d2" name="Changes" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/ApplyValorantSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/GameSettingsFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/ValorantSetting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/game/ValorantSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/ReadValorantSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/servicedisabler/ServiceDisabler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/servicedisabler/ServiceDisabler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +48,6 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="PCPerformanceTool" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -58,9 +58,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaFXApplication" />
         <option value="Enum" />
         <option value="Class" />
-        <option value="JavaFXApplication" />
       </list>
     </option>
   </component>
@@ -93,9 +93,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.side.proportion": "0.1150748",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
@@ -131,8 +131,52 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="PCPerformanceTool [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PCPerformanceTool [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PCPerformanceTool [clean]" />
+        <item itemvalue="Gradle.PCPerformanceTool [build]" />
         <item itemvalue="Gradle.PCPerformanceTool [buildDependents]" />
       </list>
     </recent_temporary>
@@ -307,7 +351,28 @@
       <option name="project" value="LOCAL" />
       <updated>1669004844526</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Initial Commit">
+      <created>1669004856298</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1669004856298</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added lombok dependency">
+      <created>1669004866816</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1669004866816</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Initial Commit">
+      <created>1669004873715</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1669004873715</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,8 +394,20 @@
     <MESSAGE value="Added method for disabling windows search telemetry" />
     <MESSAGE value="Removed redundant amount of splitting into splitting only once, also ignored any line that didn't contain an = sign which indicates it wasn't a setting" />
     <MESSAGE value="Added getting in-game video settings from file and storing into a variable and a method to list the settings. Also cleaned up methods for listing settings values." />
-    <MESSAGE value="Initial Commit" />
     <MESSAGE value="Added getters via lombok and removed unnecessary try catch statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added getters via lombok and removed unnecessary try catch statements" />
+    <MESSAGE value="Added lombok dependency" />
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+  </component>
+  <component name="regexState">
+    <option name="map">
+      <map>
+        <entry key="flags" value="2" />
+        <entry key="mode" value="3" />
+        <entry key="regex" value="(?i:earesintsettingname::bloomquality=).*" />
+        <entry key="replacement" value="EAresIntSettingName::BloomQuality=9" />
+        <entry key="text" value="EAresIntSettingName::BloomQuality=" />
+      </map>
+    </option>
   </component>
 </project>
