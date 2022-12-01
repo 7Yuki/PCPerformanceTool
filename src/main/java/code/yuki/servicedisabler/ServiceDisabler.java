@@ -18,7 +18,7 @@ public class ServiceDisabler {
 
     private int execServiceController(String cmd, String name) throws Exception {
         final Process process = Runtime.getRuntime().exec("sc " + cmd + " " + name);
-        BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
+        final BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
         String line;
         int state = ServiceState.UNKNOWN.getState();
 
