@@ -21,9 +21,8 @@ tasks {
 
 dependencies {
 
-    // https://mvnrepository.com/artifact/org.projectlombok/lombok
-    implementation("commons-io:commons-io:2.11.0")
-    //implementation(group = "org.apache.commons", name = "commons-compress", version = "1.21")
+    implementation 'com.github.oshi:oshi-core:6.3.2'
+
     compileOnly('org.projectlombok:lombok:1.18.24')
     annotationProcessor('org.projectlombok:lombok:1.18.24')
 
