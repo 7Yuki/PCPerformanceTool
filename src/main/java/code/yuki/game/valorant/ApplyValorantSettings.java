@@ -7,10 +7,12 @@ import java.util.Scanner;
 
 public class ApplyValorantSettings {
 
+    LookUpValorantSettings lookUp = new LookUpValorantSettings();
+
     public void applyIntSetting(ValorantSetting setting, int i) {
-        File settingsFile = setting.getSettingsFile().getFile();
-        String settingIntToString = String.valueOf(i);
-        String baseOldValue = ReadValorantSettings.lookUpSetting(setting);
+        File settingsFile = ValorantFileInfo.getValorantSettingsFile(setting.getSettingsFileName());
+        if (settingsFile == null) return;
+        String baseOldValue = lookUp.lookUpSetting(setting);
         char endChar = baseOldValue.charAt(baseOldValue.length() - 1);
         String newValue = baseOldValue.replace(endChar, String.valueOf(i).charAt(0));
         System.out.println("Old Value: " + baseOldValue);
@@ -34,11 +36,11 @@ public class ApplyValorantSettings {
     }
 
     public void applyBooleanSetting(ValorantSetting setting, boolean bool) {
-        File settingsFile = setting.getSettingsFile().getFile();
+        File settingsFile = ValorantFileInfo.getValorantSettingsFile(setting.getSettingsFileName());
 
 
         String settingBooleanToString = String.valueOf(bool);
-        String oldValue = ReadValorantSettings.lookUpSetting(setting);
+        String oldValue = lookUp.lookUpSetting(setting);
         if (settingsFile == null) return;
 
         Scanner scanner;
