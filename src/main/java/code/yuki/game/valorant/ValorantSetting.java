@@ -2,39 +2,37 @@ package code.yuki.game.valorant;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
-
-import java.io.File;
 
 @AllArgsConstructor
 public enum ValorantSetting {
 
-    ANTI_ALIASING_QUALITY("Anti Aliasing Quality", "antialiasingquality", GameSettingsFile.RIOT_USER),
-    ANISOTROPIC_FILTERING("Anisotropic Filtering", "anisotropicfiltering", GameSettingsFile.RIOT_USER),
-    SHADOW_QUALITY("Shadow Quality", "shadowquality", GameSettingsFile.GAME_USER),
-    SHADING_QUALITY("Shading Quality", "shadingquality", GameSettingsFile.GAME_USER),
-    FOLIAGE_QUALITY("Foliage Quality", "foliagequality", GameSettingsFile.GAME_USER),
-    EFFECTS_QUALITY("Effects Quality", "effectsquality", GameSettingsFile.GAME_USER),
-    POST_PROCESS_QUALITY("Post Process Quality", "postprocessquality", GameSettingsFile.GAME_USER),
-    VIEW_DISTANCE_QUALITY("View Distance Quality", "viewdistancequality", GameSettingsFile.GAME_USER),
-    RESOLUTION_QUALITY("Resolution Quality", "resolutionquality", GameSettingsFile.GAME_USER),
-    GAME_SETTING_TEXTURE_QUALITY("Texture Quality (Game User Setting)", "texturequality", GameSettingsFile.GAME_USER),
-    MATERIAL_QUALITY("Material Quality", "materialquality", GameSettingsFile.RIOT_USER),
-    RIOT_SETTING_TEXTURE_QUALITY("Texture Quality", "texturequality", GameSettingsFile.RIOT_USER),
-    DETAIL_QUALITY("Detail Quality", "detailquality", GameSettingsFile.RIOT_USER),
-    UI_QUALITY("UI Quality", "uiquality", GameSettingsFile.RIOT_USER),
-    BLOOM_QUALITY("Bloom Quality", "bloomquality", GameSettingsFile.RIOT_USER),
-    SHADOWS_ENABLED("Shadows Enabled", "shadowsenabled", GameSettingsFile.RIOT_USER),
-    RAW_INPUT_ENABLED("Raw Input Enabled", "rawinputbufferenabled", GameSettingsFile.RIOT_USER);
+    ANTI_ALIASING_QUALITY("Anti Aliasing Quality", "antialiasingquality", "GameUserSettings.ini"),
+    ANISOTROPIC_FILTERING("Anisotropic Filtering", "anisotropicfiltering", "RiotUserSettings.ini"),
+    SHADOW_QUALITY("Shadow Quality", "shadowquality", "GameUserSettings.ini"),
+    SHADING_QUALITY("Shading Quality", "shadingquality", "GameUserSettings.ini"),
+    FOLIAGE_QUALITY("Foliage Quality", "foliagequality", "GameUserSettings.ini"),
+    EFFECTS_QUALITY("Effects Quality", "effectsquality", "GameUserSettings.ini"),
+    POST_PROCESS_QUALITY("Post Process Quality", "postprocessquality", "GameUserSettings.ini"),
+    VIEW_DISTANCE_QUALITY("View Distance Quality", "viewdistancequality", "GameUserSettings.ini"),
+    RESOLUTION_QUALITY("Resolution Quality", "resolutionquality", "GameUserSettings.ini"),
+    GAME_SETTING_TEXTURE_QUALITY("Texture Quality (Game User Setting)", "texturequality", "GameUserSettings.ini"),
+    MATERIAL_QUALITY("Material Quality", "materialquality", "RiotUserSettings.ini"),
+    RIOT_SETTING_TEXTURE_QUALITY("Texture Quality", "texturequality", "RiotUserSettings.ini"),
+    DETAIL_QUALITY("Detail Quality", "detailquality", "RiotUserSettings.ini"),
+    UI_QUALITY("UI Quality", "uiquality", "RiotUserSettings.ini"),
+    BLOOM_QUALITY("Bloom Quality", "bloomquality", "RiotUserSettings.ini"),
+    SHADOWS_ENABLED("Shadows Enabled", "shadowsenabled", "RiotUserSettings.ini"),
+    RAW_INPUT_ENABLED("Raw Input Enabled", "rawinputbufferenabled", "RiotUserSettings.ini"),
+    NVIDIA_REFLEX_LOW_LATENCY("NVIDIA Reflex Low Latency", "nvidiareflex", "RiotUserSettings.ini"),
+    NETWORK_SMOOTHING("Network Smoothing", "networksmoothing", "RiotUserSettings.ini");
 
     @Getter
-    private String name;
+    private final String name;
 
     @Getter
-    private String lookUpName;
+    private final String lookUpName;
 
-    @Getter @Setter
-    private GameSettingsFile settingsFile;
-
+    @Getter
+    private final String settingsFileName;
 
 }
