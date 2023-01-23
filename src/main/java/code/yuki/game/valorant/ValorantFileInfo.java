@@ -25,7 +25,7 @@ public class ValorantFileInfo {
         lastKnownUser = getLastKnownUser();
         if (lastKnownUser == null) return null;
         File dirPath = new File(baseConfigPath);
-        FilenameFilter filter = (dir, name) -> name.toLowerCase().startsWith(lastKnownUser);
+        FilenameFilter filter = (dir, name) -> name.toLowerCase().startsWith(lastKnownUser) && !name.endsWith("-ap");
         String[] dirList = dirPath.list(filter);
         if (dirList != null) {
             return dirList[0];
@@ -50,10 +50,11 @@ public class ValorantFileInfo {
             if (s.contains("lastknownuser")) {
                 System.out.println("File Accessed Successfully!");
                 String[] arr = s.split("=");
-                System.out.println("Last Known User raw output: " + s);
-                System.out.println("Split output: " + arr[0] + " and " + arr[1]);
+                //System.out.println("Last Known User raw output: " + s);
+                //System.out.println("Split output: " + arr[0] + " and " + arr[1]);
                 if (arr[1] != null) {
                     lastKnownUser = arr[1];
+                    System.out.println("Last Known User: " + lastKnownUser);
                     return lastKnownUser;
                 }
             }
