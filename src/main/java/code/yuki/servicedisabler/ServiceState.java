@@ -1,5 +1,7 @@
 package code.yuki.servicedisabler;
 
+import lombok.Getter;
+
 public enum ServiceState {
     UNKNOWN(-1),
     STOPPED(1),
@@ -7,13 +9,11 @@ public enum ServiceState {
     PENDING_STOP(3),
     RUNNING(4);
 
+    @Getter
     private final int state;
 
     ServiceState(int state) {
         this.state = state;
     }
 
-    public int getState() {
-        return state;
-    }
 }
