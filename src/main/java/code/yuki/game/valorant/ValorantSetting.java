@@ -17,7 +17,7 @@ public enum ValorantSetting {
     RESOLUTION_QUALITY("Resolution Quality", "resolutionquality", "GameUserSettings.ini"),
     GAME_SETTING_TEXTURE_QUALITY("Texture Quality (Game User Setting)", "texturequality", "GameUserSettings.ini"),
     MATERIAL_QUALITY("Material Quality", "materialquality", "RiotUserSettings.ini"),
-    RIOT_SETTING_TEXTURE_QUALITY("Texture Quality", "texturequality", "RiotUserSettings.ini"),
+    RIOT_SETTING_TEXTURE_QUALITY("Texture Quality (Riot User Setting)", "texturequality", "RiotUserSettings.ini"),
     DETAIL_QUALITY("Detail Quality", "detailquality", "RiotUserSettings.ini"),
     UI_QUALITY("UI Quality", "uiquality", "RiotUserSettings.ini"),
     BLOOM_QUALITY("Bloom Quality", "bloomquality", "RiotUserSettings.ini"),
