@@ -3,6 +3,8 @@ package code.yuki.hardware.information;
 import oshi.SystemInfo;
 import oshi.hardware.HardwareAbstractionLayer;
 
+import java.util.Arrays;
+
 public class SystemSpecifications {
     private static final SystemInfo si = new SystemInfo();
     private static final HardwareAbstractionLayer hardware = si.getHardware();
@@ -13,8 +15,17 @@ public class SystemSpecifications {
     public static void getCPUInfo() {
         final String processorInfo = hardware.getProcessor().toString();
         final String[] processorInfoArray = processorInfo.split(" ");
-        processorBrand = processorInfoArray[0];
-        processorArchitechture = processorInfoArray[1];
+        if (Arrays.stream(processorInfoArray).anyMatch(s -> s.toLowerCase().contains("intel"))) {
+            processorBrand = "Intel";
+            processorArchitechture = processorInfoArray[4];
+        }else if (Arrays.stream(processorInfoArray).anyMatch(s -> s.toLowerCase().contains("amd"))) {
+            processorBrand = "AMD";
+            processorArchitechture = processorInfoArray[3];
+        } else {
+            System.out.println("????????? wtf cpu do u have");
+        }
+
+
     }
 
     public static String getCPUBrand() {

@@ -1,18 +1,13 @@
 package code.yuki;
 
-import code.yuki.commands.builder.CMDCommandBuilder;
-import code.yuki.game.valorant.InitalizeValorantSettings;
 import code.yuki.hardware.information.SystemSpecifications;
-import code.yuki.servicedisabler.ServiceDisabler;
-
-import oshi.SystemInfo;
-import oshi.hardware.GraphicsCard;
-import oshi.hardware.HardwareAbstractionLayer;
+import code.yuki.init.AppSettingsFile;
+import code.yuki.init.WriteAppSettingsFile;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello world!");
+       /* System.out.println("Hello world!");
         CMDCommandBuilder builder = new CMDCommandBuilder();
         String cmd = builder
                 .addPrefix("netsh")
@@ -30,7 +25,7 @@ public class Main {
         InitalizeValorantSettings initalizeValorantSettings = new InitalizeValorantSettings();
 
         initalizeValorantSettings.listGameUserSettingsValues();
-        initalizeValorantSettings.listRiotUserSettingsValues();
+        initalizeValorantSettings.listRiotUserSettingsValues();*/
 
 
 
@@ -38,7 +33,12 @@ public class Main {
         System.out.println("CPU Architecture: " + SystemSpecifications.getCPUArchitechture());
         System.out.println("GPU: " + SystemSpecifications.getGPU());
 
+        System.out.println("Test");
 
+        WriteAppSettingsFile writeAppSettingsFile = new WriteAppSettingsFile();
+
+        writeAppSettingsFile.writeValorantSettings();
+        System.out.println("Should've finished lol");
 
     }
 }
