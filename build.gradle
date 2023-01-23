@@ -22,9 +22,9 @@ tasks {
 dependencies {
 
     implementation 'com.github.oshi:oshi-core:6.3.2'
-
-    compileOnly('org.projectlombok:lombok:1.18.24')
-    annotationProcessor('org.projectlombok:lombok:1.18.24')
+    implementation 'com.electronwill.night-config:toml:3.6.0'
+    compileOnly'org.projectlombok:lombok:1.18.24'
+    annotationProcessor'org.projectlombok:lombok:1.18.24'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
