@@ -62,13 +62,9 @@ public class InitalizeValorantSettings {
         shadowQuality = lookUp.lookUpSettingValueInt(ValorantSetting.SHADOW_QUALITY);
         antiAliasingQuality = lookUp.lookUpSettingValueInt(ValorantSetting.ANTI_ALIASING_QUALITY);
 
-
         rawInputEnabled = lookUp.lookUpSettingValueBoolean(ValorantSetting.RAW_INPUT_ENABLED);
         shadowsEnabled = lookUp.lookUpSettingValueBoolean(ValorantSetting.SHADOWS_ENABLED);
-
-
     }
-
 
     public void listGameUserSettingsValues() {
         String riotUserSettingsValues =
