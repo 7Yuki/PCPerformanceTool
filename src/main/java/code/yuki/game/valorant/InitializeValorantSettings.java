@@ -2,7 +2,7 @@ package code.yuki.game.valorant;
 
 import lombok.Getter;
 
-public class InitalizeValorantSettings {
+public class InitializeValorantSettings {
 
     @Getter
     private final int antiAliasingQuality;
@@ -42,7 +42,7 @@ public class InitalizeValorantSettings {
     private final int nvidiaReflexLowLatency;
 
 
-    public InitalizeValorantSettings() {
+    public InitializeValorantSettings() {
         LookUpValorantSettings lookUp = new LookUpValorantSettings();
 
         uiQuality = lookUp.lookUpSettingValueInt(ValorantSetting.UI_QUALITY);

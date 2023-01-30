@@ -1,6 +1,7 @@
 package code.yuki.init;
 
-import code.yuki.game.valorant.InitalizeValorantSettings;
+import code.yuki.game.constants.Constants;
+import code.yuki.game.valorant.InitializeValorantSettings;
 import code.yuki.game.valorant.LookUpValorantSettings;
 import code.yuki.game.valorant.ValorantSetting;
 import com.electronwill.nightconfig.core.file.FileConfig;
@@ -11,7 +12,7 @@ public class WriteAppSettingsFile {
 
         LookUpValorantSettings valorantLookUp = new LookUpValorantSettings();
 
-        if (valorantLookUp.lookUpSettingValueDouble(ValorantSetting.RESOLUTION_QUALITY) == 0) new InitalizeValorantSettings();
+        if (valorantLookUp.lookUpSettingValueDouble(ValorantSetting.RESOLUTION_QUALITY) == 0) new InitializeValorantSettings();
 
         FileConfig config = FileConfig.of(AppSettingsFile.getConfigFile().getPath());
         config.load();
@@ -63,6 +64,32 @@ public class WriteAppSettingsFile {
 
     public void writeDestinySettings() {
 
+    }
+
+    public void writeDefaultSettingsFileLocations() {
+        FileConfig config = FileConfig.of(AppSettingsFile.getConfigFile());
+        config.load();
+        System.out.println("Config file loaded...");
+
+        if (config.getOptional("SettingsFileLocations.Overwatch").isEmpty()) {
+            System.out.println("Writing default location of the Overwatch 2 settings file...");
+            config.add("SettingsFileLocations.Overwatch", Constants.DEFAULT_OVERWATCH_SETTINGS_FILE);
+            System.out.println("Done!");
+        } else {
+            System.out.println("Default Overwatch 2 settings file location key already exists!");
+        }
+
+        if (config.getOptional("SettingsFileLocations.VALORANT").isEmpty()) {
+            System.out.println("Writing default location of the VALORANT settings file...");
+            config.add("SettingsFileLocations.VALORANT", Constants.DEFAULT_VALORANT_CONFIG_PATH);
+            System.out.println("Done!");
+        } else {
+            System.out.println("Default VALORANT settings file location key already exists!");
+        }
+        config.save();
+        System.out.println("Config file saved");
+        config.close();
+        System.out.println("Config file closed");
     }
 
     private String saveValorantSettingInFileAs(ValorantSetting setting) {

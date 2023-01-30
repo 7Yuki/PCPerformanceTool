@@ -4,24 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="144e3f61-258d-4400-ae0a-04bbe6b769d2" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/overwatch/ApplyOverwatchSetting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/overwatch/InitializeOverwatchSetting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/overwatch/LookUpOverwatchSetting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/overwatch/OverwatchSetting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/init/AppSettingsFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/init/ReadAppSettingsFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/init/WriteAppSettingsFile.java" afterDir="false" />
+    <list default="true" id="144e3f61-258d-4400-ae0a-04bbe6b769d2" name="Changes" comment="added the specification between the different texture quality settings">
+      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/error/AddMissingSetting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/overwatch/OverwatchFileInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/init/CreateAppSettingsFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/init/SettingsFileContents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/code/yuki/servicedisabler/WindowsServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/InitalizeValorantSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/InitalizeValorantSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/game/DestinySettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/destiny/DestinySettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/game/overwatch/InitializeOverwatchSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/overwatch/InitializeOverwatchSetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/game/overwatch/LookUpOverwatchSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/overwatch/LookUpOverwatchSetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/game/overwatch/OverwatchSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/overwatch/OverwatchSetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/ApplyValorantSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/ApplyValorantSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/InitalizeValorantSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/InitializeValorantSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/LookUpValorantSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/LookUpValorantSettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/ValorantFileInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/ValorantFileInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/ValorantSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/ValorantSetting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/gui/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/gui/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/hardware/information/SystemSpecifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/hardware/information/SystemSpecifications.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/servicedisabler/ServiceState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/servicedisabler/ServiceState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/game/valorant/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/game/constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/yuki/init/WriteAppSettingsFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/yuki/init/WriteAppSettingsFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +88,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="7Yuki &lt;notsmile@protonmail.com&gt;" />
         <option value="7yuki &lt;notsmile@proton.me&gt;" />
       </list>
     </option>
@@ -474,7 +476,63 @@
       <option name="project" value="LOCAL" />
       <updated>1669925527443</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Initial Commit">
+      <created>1674511148382</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1674511148382</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added library for dealing with toml files">
+      <created>1674511177245</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1674511177245</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Fixed spelling error lol">
+      <created>1674511195300</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1674511195300</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Deprecated this mf">
+      <created>1674511204626</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1674511204626</updated>
+    </task>
+    <task id="LOCAL-00037" summary="used lombok :)">
+      <created>1674511219898</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1674511219898</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Ignores directory that has -ap at the end (no clue what it does)">
+      <created>1674511241026</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1674511241026</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Ignores directory that has -ap at the end (no clue what it does)">
+      <created>1674511245372</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1674511245372</updated>
+    </task>
+    <task id="LOCAL-00040" summary="added the specification between the different texture quality settings">
+      <created>1674511309971</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1674511309971</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -502,7 +560,13 @@
     <MESSAGE value="Made final" />
     <MESSAGE value="Added shadow jar plugin for when production/test builds will be produced to make executable jars" />
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Added library for dealing with toml files" />
+    <MESSAGE value="Fixed spelling error lol" />
+    <MESSAGE value="Deprecated this mf" />
+    <MESSAGE value="used lombok :)" />
+    <MESSAGE value="Ignores directory that has -ap at the end (no clue what it does)" />
+    <MESSAGE value="added the specification between the different texture quality settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the specification between the different texture quality settings" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,6 +1,6 @@
 package code.yuki.game.valorant;
 
-import code.yuki.game.valorant.constants.Constants;
+import code.yuki.game.constants.Constants;
 
 import java.io.File;
 import java.io.FileNotFoundException;
